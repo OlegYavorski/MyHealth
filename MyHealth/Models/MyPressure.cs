@@ -6,6 +6,8 @@ namespace MyHealth.Models
 {
     public class MyPressure
     {
+        public int Id { get; set; }
+
         [Required]
         public int High { get; set; }
 
@@ -16,10 +18,10 @@ namespace MyHealth.Models
         public DateTime When { get; set; }
 
         [Required]
-        public int Tonometer { get; set; }
+        public int TonometerId { get; set; }
 
         [Required]
-        public int Person { get; set; }
+        public int PersonId { get; set; }
 
         [StringLength(255)]
         public string Comment { get; set; }
